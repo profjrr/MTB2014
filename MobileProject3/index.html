@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    
+</head>
+<body>
+    <!-- the nerdy jokes -->
+    <div data-role="view" id="nerdy" data-layout="main">
+        <p>MyTeachBuddy</p>
+    </div>
+
+    <!-- the explicit jokes -->
+    <div data-role="view" id="explicit" data-layout="main">
+        <p>Explicit Chuck Norris facts will go here.</p>
+    </div>
+
+    <!-- the dashboard -->
+    <div data-role="view" id="dashboard" data-layout="main">
+        <p>Chuck Norris charts will go here.</p>
+    </div>
+
+    <!-- the common layout for all views -->
+    <div data-role="layout" data-id="main">
+        <!-- the footer widget pins content to the top of the screen -->
+        <div data-role="header">
+            <!-- the navbar widget creates a title bar which can also hold buttons -->
+            <div data-role="navbar">
+                <!-- the view-title widget displays the value of the view data-title attribute as the text -->
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+        <!-- the footer widget pins the content to the bottom of the screen -->
+        <div data-role="footer">
+            <!-- the tabstrip widget creates the familiar mobile tabstrip -->
+            <div data-role="tabstrip">
+                <!-- each tabstrip button is an anchor. It's href attribute points
+                     to the id of the view that should be shown when that items is tapped. -->
+                <a href="nerdy" data-icon="home">Clean</a>
+                <a href="explicit" data-icon="delete">Explicit</a>
+                <a href="dashboard" data-icon="more">Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // create a new kendo ui mobile app using the whole page
+    new kendo.mobile.Application(document.body, { transition: "slide" });
+    </script>
+</body>
+</html>
