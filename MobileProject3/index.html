@@ -1,57 +1,79 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-    <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
 
-    <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    
-</head>
-<body>
-    <!-- the nerdy jokes -->
-    <div data-role="view" id="nerdy" data-layout="main">
-        <p>MyTeachBuddy</p>
-    </div>
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>
 
-    <!-- the explicit jokes -->
-    <div data-role="view" id="explicit" data-layout="main">
-        <p>Explicit Chuck Norris facts will go here soon.</p>
-    </div>
+    </head>
+    <body>
+        <!-- the nerdy jokes -->
+        <div data-role="view" id="nerdy" data-layout="main">
+            <p>MyTeachBuddy</p>
+            <!--<img src="C:\Users\jimsbiggirl\Desktop\1-MTB_AUG_20_2014_MTB\mtbLogo.png" />-->
+            <img src="App_Resources/mtbLogo.png"/>
+        </div>
 
-    <!-- the dashboard -->
-    <div data-role="view" id="dashboard" data-layout="main">
-        <p>Today Chuck Norris 3d charts will go here real soon.</p>
-    </div>
+        <!-- the explicit jokes -->
+        <div data-role="view" id="explicit" data-layout="main">
+            <!--<img src="C:\Users\jimsbiggirl\Desktop\1-MTB_AUG_20_2014_MTB\logo.png" />-->
+            <img src="App_Resources/logo.png"/>
+            <p>My Teach Buddy Categories</p>
+            <p>Mathematics</p>
+            <p>Math Instructional Sites for Beginner
+                through Advanced Math Learning</p>
+            <p>Biological Sciences</p>
+            <p>Areas Directly related to Biological Study</p>
+            <p>Physical Sciences</p>
+            <p>Areas primarily related to Astronomy, Physics
+                and Chemistry</p>
+            <p>Computer Science</p>
+            <p>Computer Programming and Related Technologies</p>
+            <p>Other Educational Sites and Topics</p>
+            <p>Educational Sites with focus on STEM and
+                common CORE studies</p>
+        </div>
 
-    <!-- the common layout for all views -->
-    <div data-role="layout" data-id="main">
-        <!-- the footer widget pins content to the top of the screen -->
-        <div data-role="header">
-            <!-- the navbar widget creates a title bar which can also hold buttons -->
-            <div data-role="navbar">
-                <!-- the view-title widget displays the value of the view data-title attribute as the text -->
-                <span data-role="view-title"></span>
+        <!-- the dashboard -->
+        <div data-role="view" id="dashboard" data-layout="main">
+            <p>Math Categories</p>
+            <p>
+                Level HS Math -- Carnegie Tutor
+            </p>
+            <link rel="http://www.carnegielearning.com/learning-solutions/software/cognitive-tutor/" />
+            
+        </div>
+
+        <!-- the common layout for all views -->
+        <div data-role="layout" data-id="main">
+            <!-- the footer widget pins content to the top of the screen -->
+            <div data-role="header">
+                <!-- the navbar widget creates a title bar which can also hold buttons -->
+                <div data-role="navbar">
+                    <!-- the view-title widget displays the value of the view data-title attribute as the text -->
+                    <span data-role="view-title"></span>
+                </div>
+            </div>
+            <!-- the footer widget pins the content to the bottom of the screen -->
+            <div data-role="footer">
+                <!-- the tabstrip widget creates the familiar mobile tabstrip -->
+                <div data-role="tabstrip">
+                    <!-- each tabstrip button is an anchor. It's href attribute points
+                    to the id of the view that should be shown when that items is tapped. -->
+                    <a href="nerdy" data-icon="home">Clean</a>
+                    <a href="explicit" data-icon="delete">Explicit</a>
+                    <a href="dashboard" data-icon="more">Dashboard</a>
+                </div>
             </div>
         </div>
-        <!-- the footer widget pins the content to the bottom of the screen -->
-        <div data-role="footer">
-            <!-- the tabstrip widget creates the familiar mobile tabstrip -->
-            <div data-role="tabstrip">
-                <!-- each tabstrip button is an anchor. It's href attribute points
-                     to the id of the view that should be shown when that items is tapped. -->
-                <a href="nerdy" data-icon="home">Clean</a>
-                <a href="explicit" data-icon="delete">Explicit</a>
-                <a href="dashboard" data-icon="more">Dashboard</a>
-            </div>
-        </div>
-    </div>
 
-    <script>
-    // create a new kendo ui mobile app using the whole page
-    new kendo.mobile.Application(document.body, { transition: "slide" });
-    </script>
-</body>
+        <script>
+            // create a new kendo ui mobile app using the whole page
+            new kendo.mobile.Application(document.body, { transition: "slide" });
+        </script>
+    </body>
 </html>
