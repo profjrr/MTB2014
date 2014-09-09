@@ -24,6 +24,7 @@
     <Content Include=".abproject" />
     <Content Include="App_Resources\logo.png" />
     <Content Include="App_Resources\mtbLogo.png" />
+    <Content Include="App_Resources\teachBuddy.png" />
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
