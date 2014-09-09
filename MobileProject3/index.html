@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title></title>
@@ -13,46 +13,51 @@
     <body>
         <!-- the nerdy jokes -->
         <div data-role="view" id="nerdy" data-layout="main">
-            <p>My Teach Buddy</p>
+            <p align="center"; style="font-size:xx-large;">My Teach Buddy</p>
             <!--<img src="C:\Users\jimsbiggirl\Desktop\1-MTB_AUG_20_2014_MTB\mtbLogo.png" />-->
             <img src="App_Resources/mtbLogo.png"/>
-            <p>My Teach Buddy is here for
-            Teachers, Educators and Students alike to provide easy
-            access to a whole array of proven and tested
-            WEB Sites for a variety of educational needs.
-            All of these sites are FREE for non-commercial
-            educational use.</p>
+            <p style="font-size:x-large;">My Teach Buddy is here for Teachers,
+                Educators and Students alike to provide easy access to 
+                a wide variety of proven and expertly tested WEB Sites for all
+                your educational needs. These sites have all been extentsively tested
+                and are provided FREE for your non-commercial educational use.
+            </p>
         </div>
 
         <!-- the explicit jokes -->
         <div data-role="view" id="explicit" data-layout="main">
             <!--<img src="C:\Users\jimsbiggirl\Desktop\1-MTB_AUG_20_2014_MTB\logo.png" />-->
             <img src="App_Resources/logo.png"/>
-            <p>My Teach Buddy Categories</p>
-            <p>Mathematics</p>
+            <p style="font-size:x-large;">My Teach Buddy Categories:</p>
+            <p style="font-size:larger;">Mathematics</p>
             <p>Math Instructional Sites for Beginner
                 through Advanced Math Learning</p>
-            <p>Biological Sciences</p>
+            <p style="font-size:larger;">Biological Sciences</p>
             <p>Areas Directly related to Biological Study</p>
-            <p>Physical Sciences</p>
+            <p style="font-size:larger;">Physical Sciences</p>
             <p>Areas primarily related to Astronomy, Physics
                 and Chemistry</p>
-            <p>Computer Science</p>
-            <p>Computer Programming and Related Technologies</p>
-            <p>Other Educational Sites and Topics</p>
+            <p style="font-size:larger;">Computer Science </p>
+            <p>Computer Programming and Related Technologies </p>
+            <p style="font-size:larger;">Other Educational Sites and Topics</p>
             <p>Educational Sites with focus on STEM and
                 common CORE studies</p>
         </div>
 
         <!-- the dashboard -->
         <div data-role="view" id="dashboard" data-layout="main">
-            <img src="App_Resources/teachBuddy.png" />
-            <p>Math Categories</p>
-            <p>
-                Level HS Math -- Carnegie Tutor
-            </p>
-            <link rel="http://www.carnegielearning.com/learning-solutions/software/cognitive-tutor/" />
+              <img src="App_Resources/teachBuddy.png"/>
+            <p align="center"; style="font-size: x-large;">Math Categories:</p>
+            <!--<p>
+               Add new category or course(s) under here!
+            </p>-->
             
+            <a href="http://www.carnegielearning.com/learning-solutions/software/cognitive-tutor/">
+                  Carnegie Learning Cognitive Tutor on Math
+            </a> 
+           
+              
+
         </div>
 
         <!-- the common layout for all views -->
@@ -71,9 +76,9 @@
                 <div data-role="tabstrip">
                     <!-- each tabstrip button is an anchor. It's href attribute points
                     to the id of the view that should be shown when that items is tapped. -->
-                    <a href="nerdy" data-icon="home">School</a>
+                    <a href="nerdy" data-icon="home">Home</a>
                     <a href="explicit" data-icon="organize">Categories</a>
-                    <a href="dashboard" data-icon="globe">Web Sites</a>
+                    <a href="dashboard" data-icon="action">Selections</a>
                 </div>
             </div>
         </div>
