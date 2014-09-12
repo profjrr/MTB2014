@@ -36,7 +36,7 @@
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
     <Content Include="kendo\typescript\jquery.d.ts" />
     <Content Include="kendo\typescript\kendo.mobile.d.ts" />
-    <Content Include="MobileProject3.iceproj" />
+    <Content Include="MyTeachBuddy2.iceproj" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
